@@ -14,7 +14,7 @@ year_list = [i for i in range(2005, 2021, 1)]
 
 # Page title
 st.title('US Domestic Airline Flights Performance')
-st.markdown("### Built by Grace An")
+st.markdown("##### Built by Grace An")
 
 # Sidebar with input widgets
 report_type = st.sidebar.selectbox('Report Type:', ['Yearly Airline Performance Report', 'Yearly Airline Delay Report'])
