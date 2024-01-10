@@ -2,10 +2,12 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+import os
 
+
+csv_file = os.getenv("CSV_FILE")
 # Read the airline data into pandas dataframe
-airline_data = pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv', 
-                            encoding="ISO-8859-1",
+airline_data = pd.read_csv(csv_file,
                             dtype={'Div1Airport': str, 'Div1TailNum': str, 
                                    'Div2Airport': str, 'Div2TailNum': str})
 
